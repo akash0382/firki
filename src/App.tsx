@@ -9,6 +9,8 @@ function App() {
   return (
     <main className="overflow-x-hidden bg-[#FFF9F2]">
       <Navbar />
+      <div className="h-[92px]" />
+
       <Hero />
 
       <div

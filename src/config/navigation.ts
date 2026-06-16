@@ -15,6 +15,11 @@ export const NAVIGATION = [
   },
 
   {
+    title: "Franchise",
+    href: "#franchise",
+  },
+
+  {
     title: "Visit",
     href: "#visit",
   },
