@@ -10,11 +10,6 @@ export const NAVIGATION = [
   },
 
   {
-    title: "Promise",
-    href: "#promise",
-  },
-
-  {
     title: "Franchise",
     href: "#franchise",
   },

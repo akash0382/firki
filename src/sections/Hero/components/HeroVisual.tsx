@@ -10,6 +10,9 @@ export default function HeroVisual() {
 
   const x = useTransform(rotateY, [-15, 15], [-6, 6]);
 
+  const badges = [45, 135, 225, 315];
+  
+
   function handleMove(e: React.MouseEvent<HTMLDivElement>) {
     if (!ref.current) return;
 
@@ -81,70 +84,7 @@ export default function HeroVisual() {
         "
       />
 
-      {/* Outer Ring */}
 
-      <motion.div
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 50,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-        className="
-          absolute
-          rounded-full
-          border
-          border-[#E4B95B]/40
-
-          h-[220px]
-          w-[220px]
-
-          sm:h-[300px]
-          sm:w-[300px]
-
-          md:h-[380px]
-          md:w-[380px]
-
-          lg:h-[460px]
-          lg:w-[460px]
-
-          xl:h-[520px]
-          xl:w-[520px]
-        "
-      />
-
-      {/* Inner Ring */}
-
-      <motion.div
-        animate={{ rotate: -360 }}
-        transition={{
-          duration: 35,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-        className="
-          absolute
-          rounded-full
-          border
-          border-dashed
-          border-[#E4B95B]/30
-
-          h-[180px]
-          w-[180px]
-
-          sm:h-[240px]
-          sm:w-[240px]
-
-          md:h-[300px]
-          md:w-[300px]
-
-          lg:h-[360px]
-          lg:w-[360px]
-
-          xl:h-[420px]
-          xl:w-[420px]
-        "
-      />
 
       {/* Watermark */}
 
@@ -167,8 +107,68 @@ export default function HeroVisual() {
         FIRKI
       </h2>
 
-      {/* Kulfi */}
+      {/* Orbiting Badges */}
 
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        className="
+          absolute
+          inset-0
+          z-10
+        "
+      >
+        {badges.map((angle, index) => {
+          const rad = (angle * Math.PI) / 180;
+      
+          const radiusX = 220;
+          const radiusY = 220;
+      
+          return (
+            <div
+              key={index}
+              className="absolute"
+              style={{
+                left: `calc(50% + ${Math.cos(rad) * radiusX}px)`,
+                top: `calc(50% + ${Math.sin(rad) * radiusY}px)`,
+              }}
+            >
+              <div
+                className="
+                  flex
+                  h-[95px]
+                  w-[95px]
+                  -translate-x-1/2
+                  -translate-y-1/2
+                  flex-col
+                  items-center
+                  justify-center
+                  rounded-full
+                  bg-[#E4B95B]
+                  shadow-[0_15px_40px_rgba(0,0,0,0.15)]
+                "
+              >
+                <span className="text-2xl font-black text-[#0D47B7]">
+                  0%
+                </span>
+      
+                <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#0D47B7]">
+                  Sugar
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </motion.div>
+
+
+      {/* Kulfi */}
+      
+      
       <motion.img
         src={kulfi}
         alt="Firki Kulfi"
@@ -190,7 +190,7 @@ export default function HeroVisual() {
         }}
         className="
           relative
-          z-20
+          z-30
           w-auto
           object-contain
           cursor-pointer

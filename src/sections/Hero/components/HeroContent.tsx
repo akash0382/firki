@@ -44,6 +44,25 @@ export default function HeroContent() {
         {"\u00A0"}Tradition. Twisted.
       </motion.p>
 
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15 }}
+        className="
+          mt-6
+          text-[#0D47B7]
+          font-black
+          uppercase
+          tracking-[-0.04em]
+          leading-none
+          text-[clamp(1.8rem,5vw,3.2rem)]
+        "
+      >
+        0% Sugar.
+        <br />
+        100% Childhood.
+      </motion.p>
+
       <motion.h1
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
@@ -92,10 +111,8 @@ export default function HeroContent() {
           md:leading-9
         "
       >
-        Made from{" "}
-        <span className="font-semibold text-[#0D47B7]">100% pure milk</span>,
-        handcrafted with real ingredients and inspired by the unforgettable
-        taste of Indian summers.
+        Made with pure milk and real ingredients,
+        bringing back the flavours you grew up with.
       </motion.p>
 
       <motion.div
@@ -112,20 +129,16 @@ export default function HeroContent() {
           lg:justify-center
         "
       >
-        <div className="rounded-full bg-[#FFF2C6] px-3 py-2 text-xs font-semibold text-[#0D47B7] sm:px-4 sm:text-sm">
-          Pure Milk
+        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+          🚫 0% Sugar
         </div>
-
-        <div className="rounded-full bg-[#FFF2C6] px-3 py-2 text-xs font-semibold text-[#0D47B7] sm:px-4 sm:text-sm">
-          No Preservatives
+        
+        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+          🥛 Pure Milk
         </div>
-
-        <div className="rounded-full bg-[#FFF2C6] px-3 py-2 text-xs font-semibold text-[#0D47B7] sm:px-4 sm:text-sm">
-          Real Fruits/Ingredients
-        </div>
-
-        <div className="rounded-full bg-[#FFF2C6] px-3 py-2 text-xs font-semibold text-[#0D47B7] sm:px-4 sm:text-sm">
-          No Sugar
+        
+        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+          🍓 Real Ingredients
         </div>
       </motion.div>
 
