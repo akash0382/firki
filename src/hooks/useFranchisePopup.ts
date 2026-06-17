@@ -6,7 +6,7 @@ export function useFranchisePopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 2000);
+    }, 4000);
   
     return () => clearTimeout(timer);
   }, []);
