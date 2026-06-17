@@ -25,10 +25,10 @@ export default function HeroContent() {
           justify-center
           rounded-full
           border
-          border-[#0D47B7]
-          bg-[#0D47B7]
-          px-[clamp(1.5rem,2vw,2.25rem)]
-          py-[clamp(0.9rem,1.1vw,1.15rem)]
+          border-[#111111]
+          bg-[#111111]
+          !px-5
+          !py-1
           text-[clamp(15px,1.1vw,18px)]
           font-semibold
           uppercase
@@ -49,7 +49,7 @@ export default function HeroContent() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
         className="
-          mt-6
+          !mt-6
           text-[#0D47B7]
           font-black
           uppercase
@@ -68,7 +68,7 @@ export default function HeroContent() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.7 }}
         className="
-          mt-6
+          !mt-6
           font-black
           leading-[0.9]
           tracking-[-0.05em]
@@ -86,9 +86,9 @@ export default function HeroContent() {
         animate={{ width: 130 }}
         transition={{ delay: 0.5 }}
         className="
-          mx-auto
-          mt-6
-          h-[4px]
+          !mx-auto
+          !mt-6
+          !h-[4px]
           rounded-full
           bg-[#E4B95B]
         "
@@ -100,15 +100,15 @@ export default function HeroContent() {
         transition={{ delay: 0.6 }}
         className="
           mx-auto
-          mt-8
+          !mt-8
           max-w-[560px]
           text-[16px]
           leading-7
           text-neutral-600
-          sm:text-[18px]
-          sm:leading-8
-          md:text-[20px]
-          md:leading-9
+          !sm:text-[18px]
+          !sm:leading-8
+          !md:text-[20px]
+          !md:leading-9
         "
       >
         Made with pure milk and real ingredients,
@@ -120,24 +120,24 @@ export default function HeroContent() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
         className="
-          mt-10
+          !mt-10
           flex
           flex-wrap
           justify-center
-          gap-3
-          sm:gap-4
+          !gap-3
+          !sm:gap-4
           lg:justify-center
         "
       >
-        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+        <div className="rounded-full bg-[#FFF2C6] !px-4 !py-2 text-sm font-bold text-[#0D47B7]">
           🚫 0% Sugar
         </div>
         
-        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+        <div className="rounded-full bg-[#FFF2C6] !px-4 !py-2 text-sm font-bold text-[#0D47B7]">
           🥛 Pure Milk
         </div>
         
-        <div className="rounded-full bg-[#FFF2C6] px-4 py-2 text-sm font-bold text-[#0D47B7]">
+        <div className="rounded-full bg-[#FFF2C6] !px-4 !py-2 text-sm font-bold text-[#0D47B7]">
           🍓 Real Ingredients
         </div>
       </motion.div>
@@ -151,7 +151,7 @@ export default function HeroContent() {
         className="
           flex
           justify-center
-          px-2
+          !px-2
           lg:justify-center
         "
       >
@@ -160,6 +160,7 @@ export default function HeroContent() {
           className="
             bg-[#FFF2C6]
             text-[#0D47B7]
+            !px-4 !py-2
             shadow-[0_10px_24px_rgba(228,185,91,0.28)]
             hover:shadow-[0_18px_40px_rgba(228,185,91,0.38)]
           "

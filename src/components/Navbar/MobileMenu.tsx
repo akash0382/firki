@@ -109,7 +109,7 @@ export default function MobileMenu({
                 "
               >
                 {item.title}
-
+          
                 <span
                   className="
                     absolute
@@ -127,6 +127,29 @@ export default function MobileMenu({
                 />
               </motion.a>
             ))}
+          
+            {/* Franchise CTA */}
+            <a
+              href="#franchise"
+              onClick={() => setOpen(false)}
+              className="
+                mt-4
+                rounded-2xl
+                border-[3px]
+                border-[#5A4343]
+                bg-[#F7C600]
+                px-6
+                py-3
+                font-semibold
+                text-[#5A4343]
+                shadow-[6px_6px_0px_#5A4343]
+                transition-all
+                duration-300
+                hover:-translate-y-1
+              "
+            >
+              Own A FIRKI Franchise
+            </a>
           </div>
         </motion.div>
       )}

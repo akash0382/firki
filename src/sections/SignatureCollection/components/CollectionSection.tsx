@@ -18,9 +18,9 @@ export default function CollectionSection({
       className="
         relative
         w-full
-        py-16
-        sm:py-20
-        lg:py-24
+        !py-10
+        sm:py-14
+        lg:py-18
         overflow-hidden
       "
     >
@@ -40,20 +40,16 @@ export default function CollectionSection({
 
       {/* Heading */}
 
-      <div className="mt-8 text-center">
+      <div className="!mt-8 text-center">
         <h2
           className="
             text-[#0D47B7]
 
             font-black
             tracking-[-0.05em]
-
             text-[42px]
-
             sm:text-[54px]
-
             md:text-[68px]
-
             lg:text-[82px]
             drop-shadow-[0_1px_0_rgba(216,176,76,0.18)]
           "
@@ -62,21 +58,17 @@ export default function CollectionSection({
         </h2>
 
         {isPremium && (
-          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.32em] text-[#C89A2B]">
+          <p className="!mt-3 text-sm font-semibold uppercase tracking-[0.32em] text-[#C89A2B]">
             Premium Signature
           </p>
         )}
 
         <p
           className="
-            mt-3
-
+            !mt-3
             text-neutral-500
-
             text-base
-
             sm:text-lg
-
             lg:text-xl
           "
         >
@@ -86,7 +78,7 @@ export default function CollectionSection({
 
       {/* Cards */}
 
-      <div className={isPremium ? "mt-14" : "mt-12"}>
+      <div className={isPremium ? "!mt-10" : "!mt-6"}>
         {children}
       </div>
     </section>

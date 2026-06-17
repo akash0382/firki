@@ -61,9 +61,6 @@ export default function DesktopNavbar() {
             gap-8
             xl:gap-14
             2xl:gap-16
-            lg:translate-x-4
-            xl:translate-x-16
-            2xl:translate-x-24
           "
         >
           {NAVIGATION.map((item) => (
@@ -106,6 +103,32 @@ export default function DesktopNavbar() {
             </a>
           ))}
         </nav>
+
+        <a
+          href="#franchise"
+          className="
+            shrink-0
+            !mr-6
+            !xl:mr-10
+            rounded-2xl
+            border-[3px]
+            border-[#5A4343]
+            bg-[#F7C600]
+            !px-6
+            !py-3
+            font-semibold
+            text-[#5A4343]
+            shadow-[6px_6px_0px_#5A4343]
+            transition-all
+            duration-300
+            hover:-translate-y-1
+            hover:scale-[1.03]
+            hover:shadow-[8px_8px_0px_#5A4343]
+          "
+        >
+          Own A FIRKI Franchise
+        </a>
+
       </div>
     </motion.header>
   );

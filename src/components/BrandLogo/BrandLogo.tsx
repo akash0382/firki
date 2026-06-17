@@ -23,7 +23,7 @@ export default function BrandLogo({
       </h1>
 
       <p
-        className="-mt-1 flex items-center gap-1"
+        className="!mt-1 flex items-center gap-1"
         style={{
           fontFamily: '"Great Vibes", cursive',
         }}

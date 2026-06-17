@@ -13,12 +13,12 @@ export default function SignatureCollection() {
         overflow-hidden
         bg-[#FFF9F2]
         scroll-mt-32
-        pb-32
-        pt-20
-        sm:pb-44
-        sm:pt-24
-        lg:pb-64
-        lg:pt-40
+        !pb-32
+        !pt-20
+        !sm:pb-44
+        !sm:pt-24
+        !lg:pb-64
+        !lg:pt-40
       "
     >
       <Container className="relative z-10 flex flex-col items-center">
@@ -65,14 +65,12 @@ export default function SignatureCollection() {
               border
               border-[#0D47B7]
               bg-[#0D47B7]
-
-              px-[clamp(1.5rem,2vw,2.25rem)]
-              py-[clamp(0.9rem,1.1vw,1.15rem)]
+              !px-5
+              !py-1
               text-[clamp(15px,1.1vw,18px)]
               font-semibold
               uppercase
               tracking-[clamp(0.18em,0.24vw,0.34em)]
-
               text-white
               shadow-[0_14px_34px_rgba(13,71,183,0.25)]
               whitespace-nowrap
@@ -85,24 +83,19 @@ export default function SignatureCollection() {
 
           <h2
             className="
-              mt-6
-
+              !mt-6
               font-black
               tracking-[-0.05em]
-
               text-[#111111]
-
               text-5xl
-
               sm:text-6xl
-
               lg:text-[84px]
             "
           >
             Signature Collection
           </h2>
 
-          <div className="mx-auto mt-6 flex w-full justify-center">
+          <div className="mx-auto !mt-6 flex w-full justify-center">
             <p
               className="
                 max-w-[780px]
@@ -120,7 +113,7 @@ export default function SignatureCollection() {
 
         {/* Sections */}
 
-        <div className="mt-16 w-full max-w-[1180px] space-y-16 sm:mt-20 sm:space-y-20 lg:mt-32 lg:space-y-32">
+        <div className="!mt-16 w-full max-w-[1180px] !space-y-16 !sm:mt-20 !sm:space-y-20 !lg:mt-32 !lg:space-y-32">
           {collection.map((section) => (
             <CollectionSection
               key={section.title}

@@ -23,8 +23,8 @@ export default function StoryContent() {
           border
           border-[#0D47B7]
           bg-[#0D47B7]
-          px-[clamp(1.5rem,2vw,2.25rem)]
-          py-[clamp(0.9rem,1.1vw,1.15rem)]
+          !px-5
+          !py-1
           text-[clamp(15px,1.1vw,18px)]
           font-semibold
           uppercase
@@ -36,22 +36,19 @@ export default function StoryContent() {
           max-w-[calc(100vw-1rem)]
         "
       >
-        {"\u00A0"}Our Story{"\u00A0"}
+        Our Story
       </span>
 
       {/* Heading */}
 
       <h2
         className="
-          mt-7
-
+          !mt-7
           text-[34px]
           font-black
           leading-[0.95]
           tracking-[-0.05em]
-
           text-[#111111]
-
           sm:text-[48px]
           md:text-[68px]
           lg:text-[82px]
@@ -69,14 +66,11 @@ export default function StoryContent() {
 
       <div
         className="
-          mt-7
-
-          mx-auto
-          h-[4px]
-          w-24
-
+          !mt-7
+          !mx-auto
+          !h-[4px]
+          !w-24
           rounded-full
-
           bg-[#E4B95B]
           lg:mx-0
           lg:w-32
@@ -87,15 +81,11 @@ export default function StoryContent() {
 
       <p
         className="
-          mt-8
-
+          !mt-8
           max-w-[560px]
-
           text-[16px]
           leading-8
-
           text-neutral-600
-
           sm:text-[18px]
           sm:leading-9
         "
@@ -116,12 +106,10 @@ export default function StoryContent() {
 
       <div
         className="
-          mt-10
-
+          !mt-10
           border-l-4
           border-[#E4B95B]
-
-          pl-5
+          !pl-5
         "
       >
         <p

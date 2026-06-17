@@ -107,14 +107,14 @@ export default function InfiniteLane({ items, isPremium = false }: Props) {
 
   if (items.length === 0) {
     return (
-      <div className="flex justify-center py-20">
+      <div className="flex justify-center !py-20">
         <div
           className="
             rounded-full
             border
             border-[#E4B95B]
-            px-[clamp(1.5rem,2vw,2.25rem)]
-            py-[clamp(0.75rem,1vw,1.1rem)]
+            !px-5
+            !py-1
             text-[clamp(18px,1.4vw,20px)]
             font-bold
             text-[#0D47B7]
