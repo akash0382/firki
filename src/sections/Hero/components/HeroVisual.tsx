@@ -125,8 +125,8 @@ export default function HeroVisual() {
         {badges.map((angle, index) => {
           const rad = (angle * Math.PI) / 180;
       
-          const radiusX = 220;
-          const radiusY = 220;
+          const radiusX = window.innerWidth < 640 ? 120 : 220;
+          const radiusY = window.innerWidth < 640 ? 120 : 220;
       
           return (
             <div
@@ -142,6 +142,8 @@ export default function HeroVisual() {
                   flex
                   h-[95px]
                   w-[95px]
+                  sm:h-[95px]
+  sm:w-[95px]
                   -translate-x-1/2
                   -translate-y-1/2
                   flex-col
@@ -152,12 +154,12 @@ export default function HeroVisual() {
                   shadow-[0_15px_40px_rgba(0,0,0,0.15)]
                 "
               >
-                <span className="text-2xl font-black text-[#0D47B7]">
-                  0%
+                <span className="text-lg font-black text-[#0D47B7]">
+                  100%
                 </span>
       
-                <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#0D47B7]">
-                  Sugar
+                <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#0D47B7]">
+                  NATURAL
                 </span>
               </div>
             </div>
@@ -196,15 +198,15 @@ export default function HeroVisual() {
           cursor-pointer
           drop-shadow-[0_35px_40px_rgba(0,0,0,0.22)]
 
-          h-[200px]
+          h-[280px]
 
-          sm:h-[280px]
+          sm:h-[360px]
 
-          md:h-[360px]
+          md:h-[460px]
 
-          lg:h-[440px]
+          lg:h-[540px]
 
-          xl:h-[500px]
+          xl:h-[600px]
         "
       />
     </div>

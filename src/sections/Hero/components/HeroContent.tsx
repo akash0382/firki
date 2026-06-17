@@ -46,8 +46,22 @@ export default function HeroContent() {
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15 }}
+        animate={{
+          opacity: 1,
+          textShadow: [
+            "0 0 10px rgba(245,216,107,0.4), 0 0 20px rgba(245,216,107,0.3)",
+            "0 0 30px rgba(245,216,107,1), 0 0 60px rgba(245,216,107,0.9), 0 0 90px rgba(245,216,107,0.7)",
+            "0 0 10px rgba(245,216,107,0.4), 0 0 20px rgba(245,216,107,0.3)",
+          ],
+        }}
+        transition={{
+          opacity: { duration: 0.5, delay: 0.15 },
+          textShadow: {
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          },
+        }}
         className="
           !mt-6
           text-[#0D47B7]
@@ -58,9 +72,9 @@ export default function HeroContent() {
           text-[clamp(1.8rem,5vw,3.2rem)]
         "
       >
-        0% Sugar.
+        zero added
         <br />
-        100% Childhood.
+        sugar.
       </motion.p>
 
       <motion.h1
@@ -130,7 +144,7 @@ export default function HeroContent() {
         "
       >
         <div className="rounded-full bg-[#FFF2C6] !px-4 !py-2 text-sm font-bold text-[#0D47B7]">
-          🚫 0% Sugar
+          🚫 Zero Added Sugar
         </div>
         
         <div className="rounded-full bg-[#FFF2C6] !px-4 !py-2 text-sm font-bold text-[#0D47B7]">

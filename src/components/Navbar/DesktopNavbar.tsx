@@ -40,10 +40,10 @@ export default function DesktopNavbar() {
         {/* Logo */}
 
         <div className="
-       w-[280px]
-       lg:w-[360px]
-       xl:w-[420px]
-       2xl:w-[460px]
+       !w-[280px]
+       !lg:w-[360px]
+       !xl:w-[420px]
+       !2xl:w-[460px]
        flex
        items-center
        justify-center">

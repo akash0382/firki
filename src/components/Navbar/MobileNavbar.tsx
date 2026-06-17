@@ -30,8 +30,8 @@ export default function MobileNavbar({
       "
     >
       {/* Logo */}
-      <div className="!pl-2">
-        <div className="ml-5 scale-[0.70]">
+      <div className="!pl-0">
+        <div className="!-ml-7 scale-[0.70]">
           <BrandLogo />
         </div>
       </div>
