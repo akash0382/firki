@@ -34,7 +34,7 @@ export default function Franchise() {
       id="franchise"
       className="bg-[#FFF9F2] !py-24 !scroll-mt-10"
     >
-      <div className="mx-auto max-w-7xl !px-6">
+      <div className="!mx-auto max-w-7xl !px-6">
 
         <div className="text-center w-full flex flex-col items-center">
 

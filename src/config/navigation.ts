@@ -13,4 +13,10 @@ export const NAVIGATION = [
     title: "Visit",
     href: "#visit",
   },
+
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+
 ];

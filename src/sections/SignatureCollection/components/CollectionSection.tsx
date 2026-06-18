@@ -19,8 +19,8 @@ export default function CollectionSection({
         relative
         w-full
         !py-10
-        sm:py-14
-        lg:py-18
+        !sm:py-14
+        !lg:py-18
         overflow-hidden
       "
     >

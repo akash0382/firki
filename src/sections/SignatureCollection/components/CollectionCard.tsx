@@ -19,7 +19,7 @@ export default function CollectionCard({
     ? `
         group
         relative
-        mx-auto
+        !mx-auto
         flex
         h-full
         max-w-[640px]
@@ -45,7 +45,7 @@ export default function CollectionCard({
     : `
         group
         relative
-        mx-auto
+        !mx-auto
         flex
         h-full
         max-w-[560px]
@@ -107,38 +107,38 @@ export default function CollectionCard({
         </div>
       )}
 
-      <div className={isPremium ? "px-6 py-8 sm:px-10 sm:py-12" : "px-5 py-7 sm:px-8 sm:py-10"}>
+      <div className={isPremium ? "!px-6 !py-8 !sm:px-10 !sm:py-12" : "!px-5 !py-7 !sm:px-8 !sm:py-10"}>
         <div className="flex justify-center">
           <div
-            className={`flex h-[156px] w-[156px] items-center justify-center rounded-full transition-all duration-500 group-hover:scale-105 sm:h-[188px] sm:w-[188px] ${imageRingClassName}`}
+            className={`flex !h-[156px] !w-[156px] items-center justify-center rounded-full transition-all duration-500 group-hover:scale-105 sm:h-[188px] sm:w-[188px] ${imageRingClassName}`}
           >
             <img src={image} alt={title} className={imageClassName} />
           </div>
         </div>
 
         <h3
-          className={`mt-7 text-center font-black tracking-[-0.03em] text-[#0D47B7] ${isPremium ? "text-[clamp(2rem,3vw,3.25rem)]" : "text-2xl sm:text-3xl md:text-4xl"}`}
+          className={`!mt-7 text-center font-black tracking-[-0.03em] text-[#0D47B7] ${isPremium ? "text-[clamp(2rem,3vw,3.25rem)]" : "text-2xl sm:text-3xl md:text-4xl"}`}
         >
           {title}
         </h3>
 
         <p
-          className={`mt-2 text-center text-[10px] font-semibold uppercase tracking-[0.35em] text-[#C89A2B] ${isPremium ? "sm:text-[11px]" : ""}`}
+          className={`!mt-2 text-center text-[10px] font-semibold uppercase tracking-[0.35em] text-[#C89A2B] ${isPremium ? "sm:text-[11px]" : ""}`}
         >
           {tagline}
         </p>
 
         <p
-          className={`mx-auto mt-4 text-center text-sm leading-6 text-neutral-600 sm:text-base sm:leading-7 md:text-[17px] md:leading-8 ${isPremium ? "max-w-[36rem]" : "max-w-md"}`}
+          className={`!mx-auto !mt-4 text-center text-sm leading-6 text-neutral-600 sm:text-base sm:leading-7 md:text-[17px] md:leading-8 ${isPremium ? "max-w-[36rem]" : "max-w-md"}`}
         >
           {description}
         </p>
 
-        <div className="mt-5 flex flex-wrap justify-center gap-2">
+        <div className="!mt-5 flex flex-wrap justify-center gap-2">
           {ingredients.map((item) => (
             <span
               key={item}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium sm:text-sm ${isPremium ? "bg-[#FFF0C8] text-[#8A6720]" : "bg-[#FFF3D8] text-[#8A6720]"}`}
+              className={`rounded-full !px-3 !py-1.5 text-xs font-medium sm:text-sm ${isPremium ? "bg-[#FFF0C8] text-[#8A6720]" : "bg-[#FFF3D8] text-[#8A6720]"}`}
             >
               {item}
             </span>

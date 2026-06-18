@@ -21,7 +21,7 @@ export default function SignatureCollection() {
         !lg:pt-40
       "
     >
-      <Container className="relative z-10 flex flex-col items-center">
+      <Container className="relative z-10 flex flex-col items-center !mx-auto">
 
         {/* Background Decoration */}
 

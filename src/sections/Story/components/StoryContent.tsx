@@ -10,7 +10,7 @@ export default function StoryContent() {
         duration: 0.8,
         ease: "easeOut",
       }}
-      className="mx-auto max-w-[620px] text-center"
+      className="!mx-auto max-w-[620px] text-center"
     >
       {/* Label */}
 

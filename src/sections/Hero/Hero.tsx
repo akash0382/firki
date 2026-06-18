@@ -47,7 +47,6 @@ export default function Hero() {
             pb-12
             sm:gap-12
             sm:pt-24
-
             lg:grid-cols-[1fr_1fr]
             lg:gap-16
             lg:pb-0

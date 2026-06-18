@@ -7,6 +7,7 @@ import SignatureCollection from "./sections/SignatureCollection/SignatureCollect
 import Story from "./sections/Story/Story";
 import Franchise from "./sections/Franchise/Franchise";
 import Visit from "./sections/Visit/Visit";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   const { open, closePopup } = useFranchisePopup();
@@ -31,6 +32,8 @@ function App() {
       <Franchise />      
 
       <Visit />
+
+      <Contact />
     </main>
   );
 }

@@ -37,7 +37,7 @@ export default function SectionBanner({
 
         <p
           className="
-            mx-auto
+            !mx-auto
             !mt-4
             max-w-2xl
             text-[16px]

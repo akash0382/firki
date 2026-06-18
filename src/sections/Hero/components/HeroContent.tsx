@@ -5,13 +5,13 @@ export default function HeroContent() {
   return (
     <div
       className="
-        mx-auto
+        !mx-auto
         max-w-[620px]
-        px-0
+        !px-0
         text-center
-        sm:px-2
-        lg:px-0
-        lg:mx-auto
+        !sm:px-2
+        !lg:px-0
+        !lg:mx-auto
         lg:text-center
       "
     >
@@ -113,7 +113,7 @@ export default function HeroContent() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
         className="
-          mx-auto
+          !mx-auto
           !mt-8
           max-w-[560px]
           text-[16px]
