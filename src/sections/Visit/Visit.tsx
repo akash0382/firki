@@ -5,7 +5,7 @@ import gorakhpur1 from "../../assets/outlets/Gorakhpur1.jpeg";
 import gorakhpur2 from "../../assets/outlets/Gorakhpur2.jpeg";
 
 // temporary
-import lucknowImage from "../../assets/outlets/gorakhpur1.jpeg";
+import lucknowImage from "../../assets/outlets/Gorakhpur1.jpeg";
 
 
 const gorakhpurSwiggy = "#";
