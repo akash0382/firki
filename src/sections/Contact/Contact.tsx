@@ -90,9 +90,13 @@ export default function Contact() {
                 !mx-auto
                 !mt-6
                 max-w-[700px]
-                text-[18px]
-                leading-8
+                !px-5
+                text-[16px]
+                leading-7
                 text-neutral-600
+                !sm:px-0
+                !sm:text-[20px]
+                sm:leading-8
               "
             >
               Questions, franchise enquiries,
@@ -121,7 +125,7 @@ export default function Contact() {
             </a>
           
             <a
-              href="mailto:hello@firki.in"
+              href="mailto:akashpal1160@gmail.com"
               className="
                 flex
                 items-center
@@ -134,7 +138,7 @@ export default function Contact() {
               "
             >
               <Mail size={18} />
-              hello@firki.in
+              akashpal1160@gmail.com
             </a>
           
             <a

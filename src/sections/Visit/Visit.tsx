@@ -1,11 +1,9 @@
 import Container from "../../components/layout/Container";
 import swiggyLogo from "../../assets/icons/Swiggy.png";
 import zomatoLogo from "../../assets/icons/zomato.png";
+import lucknowImage from "../../assets/outlets/Lucknow1.jpeg";
 import gorakhpur1 from "../../assets/outlets/Gorakhpur1.jpeg";
 import gorakhpur2 from "../../assets/outlets/Gorakhpur2.jpeg";
-
-// temporary
-import lucknowImage from "../../assets/outlets/Gorakhpur1.jpeg";
 
 
 const gorakhpurSwiggy = "#";
@@ -409,9 +407,7 @@ export default function Visit() {
                     <br />
                     Near HP Petrol Pump,
                     
-                    Basharatpur, Siva Puram,
-                    <br />
-                    Gorakhpur
+                    Basharatpur, Siva Puram, Gorakhpur
                   </p>
                 
                   <p className="text-sm font-semibold text-[#C89A2B]">
